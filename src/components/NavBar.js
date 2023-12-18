@@ -1,7 +1,6 @@
 import React from "react";
-import { Container, Col, Row, Form, Navbar } from "react-bootstrap";
+import { Container, Form, Navbar } from "react-bootstrap";
 import logo from '../images/logo.png'
-import { Link } from 'react-router-dom'
 import {useDispatch } from 'react-redux';
 import {MovieAction,MovieSearch} from "../redux/action/MovieAction"
 const NavBar = () => {

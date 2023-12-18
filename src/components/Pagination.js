@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ReactPaginate from 'react-paginate';
 import {useDispatch,useSelector } from 'react-redux';
-import {MovieAction,MoviePage} from "../redux/action/MovieAction"
+import {MoviePage} from "../redux/action/MovieAction"
 const PaginationComponent = () => {
 
     const [pageCount, setpageCount] = useState(0)

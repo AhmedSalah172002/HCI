@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Row, Card, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import CardMovie from "./CardMovie";
 import PaginationComponent from './Pagination'
 import {useDispatch,useSelector } from 'react-redux';
@@ -12,7 +12,7 @@ const MoviesList = () => {
     const dataMovies=useSelector((state)=> state.movies)
     useEffect(() => {
       dispatch(MovieAction())
-    }, [])
+    }, [dispatch])
     useEffect(() => {
       setMovies(dataMovies)
     }, [dataMovies])
